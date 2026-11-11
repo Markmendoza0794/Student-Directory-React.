@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: medium;
+    font-family: serif;
+}
+
+body {
+    background-color: #f5f2e9;
+    color: #293c35;
+}
+
+.app-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+
+/* Header styles */
+header {
+    padding: 30px 25px;
+    margin-bottom: 25px;
+    border-left: 8px solid #d7b76c;
+    border-radius: 5px;
+    background-color: #31584b;
+    color: white;
+}
+
+header > h1 {
+    margin-bottom: 8px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+header > p {
+    font-size: large;
+    line-height: 1.5;
+    color: #e2ebe5;
+}
+
+/* Layout */
+.directory-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+section {
+    min-width: 0;
+    padding: 25px;
+    border: 1px solid #deded3;
+    border-radius: 8px;
+    background-color: white;
+}
+
+section > h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d7b76c;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* Form styles */
+#student-form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+#student-form label {
+    margin-bottom: 7px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#student-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aabbb1;
+    border-radius: 5px;
+    background-color: #fafbf8;
+}
+
+#student-form input:focus {
+    outline: 2px solid #31584b;
+    outline-offset: 2px;
+}
+
+#student-form > button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #31584b;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#student-form > button:hover {
+    background-color: #234236;
+}
+
+button:focus-visible {
+    outline: 2px solid #31584b;
+    outline-offset: 3px;
+}
+
+/* Student list styles */
+#student-list {
+    display: grid;
+    gap: 12px;
+}
+
+#empty-message {
+    padding: 35px 15px;
+    border: 1px dashed #aabbb1;
+    border-radius: 5px;
+    background-color: #f5f7f2;
+    text-align: center;
+    color: #607267;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    border-left: 4px solid #d7b76c;
+    border-radius: 5px;
+    background-color: #f5f7f2;
+    overflow-wrap: anywhere;
+}
+
+.list-item > h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.list-item > button {
+    padding: 6px 12px;
+    border: 1px solid #965345;
+    border-radius: 5px;
+    background-color: white;
+    color: #965345;
+    cursor: pointer;
+}
+
+.list-item > button:hover {
+    background-color: #965345;
+    color: white;
+}
+
+/* Footer */
+.page-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: small;
+    color: #607267;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .app-container {
+        padding: 15px;
+    }
+
+    .directory-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    header {
+        padding: 25px 20px;
+    }
+
+    header > h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
